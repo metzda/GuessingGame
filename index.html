@@ -1,0 +1,61 @@
+<html>
+<head>
+    <title>Dan's Awesome Guessing Game</title>
+    <link href="css/main.css" rel="stylesheet" media="screen">
+    <link href="css/bootstrap.min.css" rel="stylesheet" media="screen">
+</head>
+<body>
+    <div class="container">
+        <header class="page-header"><h1>Dan's Awesome Guessing Game</h1></header>
+        <div class="jumbotron" align="center">
+            <br>
+            <div class="row">
+                <div class="col-xs-2"></div>
+                <div id="gameEnd" class="col-xs-8"></div>
+                <div class="col-xs-2"></div>
+            </div>
+            <br>
+            <div class="row">
+                <div class="col-xs-4"></div>
+                <div class="col-xs-4">
+                    <input type="number" class="form-control input-lg" min="1" max="100" id="inputGuess" placeholder="Input Guess 1-100" text-align="center">
+                </div>
+                <div class="col-xs-4"></div>
+            </div>
+            <br>
+            <div class="row">
+                <div class="col-xs-4"></div>
+                <div class="col-xs-4">
+                    <button id="btnGuess" type="button" class="btn btn-default btn-lg">Submit Your Guess!</button>
+                </div>
+                <div class="col-xs-4"></div>
+            </div>
+            <br>
+            <div class="row">
+                <div class="col-xs-2"></div>
+                <div id="status" class="h4 col-xs-8"> </div>
+                <div class="col-xs-2"></div>
+            </div>
+            <br>
+            <div class="row">
+                <div class="col-xs-2"></div>
+                <div id="hint" align="center"><button id="btnHint" type="button" class="col-xs-4 btn btn-primary btn-lg">Give me a Hint</button></div>
+                <div id="restart" align="center"><button id="btnRestart" type="button" class="col-xs-4 btn btn-info btn-lg">Play Again</button></div>
+                <div class="col-xs-2"></div>
+            </div>
+            <div class="row">
+                <div class="col-xs-2"></div>
+                <div id="hintText" class="h4 col-xs-8"> </div>
+                <div class="col-xs-2"></div>
+            </div>
+            <div class="row">
+                <div class="col-xs-2"></div>
+                <div id="remainingGuesses" class="h3 col-xs-8"> </div>
+                <div class="col-xs-2"></div>
+            </div>
+        </div>
+    </div>
+    <script src="js/jquery-2.1.4.min.js"></script>
+    <script src="js/guessingGame.js"></script>
+</body>
+</html>
